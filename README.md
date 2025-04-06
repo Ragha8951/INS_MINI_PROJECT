@@ -1,5 +1,10 @@
 # Digital Signature Scheme
 
+## 📽️ Live Demo
+
+🎥 [Watch the Project Demo](https://drive.google.com/file/d/15Cj42SxYErl3ZmxI-hC1qAtBhQUlpDGb/view?usp=sharing)
+
+
 ## Project Overview
 This project implements a **Digital Signature Scheme** using the Digital Signature Standard (DSS) for secure data authentication. The system is built using Python and Flask, and it demonstrates how users can generate, sign, and verify messages and certificates securely.
 
@@ -30,10 +35,33 @@ Make sure you have the following installed:
 ---
 
 ## Libraries Used
-```bash
-Flask==2.2.2
-Flask_SQLAlchemy==3.1.1
-cryptography==41.0.1
+
+| Library         | Purpose                                      |
+|----------------|----------------------------------------------|
+| Flask           | Web framework for Python                     |
+| Flask_SQLAlchemy| ORM for SQLite database                      |
+| Cryptography    | DSA key generation, signing, and verification |
+| JSON            | Used for certificate formatting              |
+
+
+## CODE Structure
+```
+DSS_Project/
+
+│
+├── app.py                          # Main Flask application
+├── users.db                        # SQLite database (auto-created by SQLAlchemy)
+│
+├──  templates/                   # HTML templates
+│   ├── index.html                 # Main interface for DSS
+│   └── view_certificate.html      # Certificate view page
+│
+├──  static/                      # Static files like CSS/images
+│   ├── styles.css                # Custom styling
+│   └── pup.avif                  # Background image
+│
+├──  requirements.txt             # List of Python packages to install
+
 ```
 
 Install all dependencies using:
@@ -76,14 +104,6 @@ Go to: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 ### Google Colab
 You can also run this project using Google Colab: [Google Colab Link](https://colab.research.google.com/drive/1qvsRfLlnSTD4EO1_XSN6c8PH6Ojy5Foh?usp=sharing)
 
-## Libraries Used
-
-| Library         | Purpose                                      |
-|----------------|----------------------------------------------|
-| Flask           | Web framework for Python                     |
-| Flask_SQLAlchemy| ORM for SQLite database                      |
-| Cryptography    | DSA key generation, signing, and verification |
-| JSON            | Used for certificate formatting              |
 
 
 ## Output
