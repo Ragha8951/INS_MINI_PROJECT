@@ -44,7 +44,7 @@ Make sure you have the following installed:
 | JSON            | Used for certificate formatting              |
 
 
-## CODE Structure
+## Code Structure
 ```
 DSS_Project/
 
